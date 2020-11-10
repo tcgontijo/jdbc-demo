@@ -65,13 +65,19 @@ public class ContaDAO {
 	}
 
 	public static void main(String[] args) {
-		//Conta c = new Conta("titular", 1, 2, 10.0, 10.0);
-		//Conta c3 = new Conta("ronaldo", 12, 21, 15.0, 15.0);
+		Conta c1 = new Conta("Jose da Silva", 1, 2, 1000.0, 500.0);
+		Conta c2 = new Conta("Mara Maravilha", 2, 2, 2000.0, -850.0);
+		Conta c3 = new Conta("Ronaldo Fenômeno", 3, 2, 500.0, 22000.0);
+		Conta c4 = new Conta("Tereza da Silva", 4, 2, 0.0, 1450.0);
+		Conta c5 = new Conta("Iolanda Oliveira", 5, 2, 300.0, -280.0);
 		ContaDAO dao = new ContaDAO();
+		//Criar 05 contas e salvar no banco
 		try {
-			//dao.inserir(c);
-			//dao.atualiza(c3, 2);
-			dao.excluir(1);
+			dao.inserir(c1);
+			dao.inserir(c2);
+			dao.inserir(c3);
+			dao.inserir(c4);
+			dao.inserir(c5);
 			dao.listagem();
 		} catch (SQLException e) {
 			e.printStackTrace();
