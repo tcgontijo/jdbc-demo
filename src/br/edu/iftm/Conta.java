@@ -1,26 +1,27 @@
 package br.edu.iftm;
 
 public class Conta {
+	private int id;
 	private String titular;
-	private int id, agencia, numero;
+	private int numero, agencia;
 	private double limite, saldo;
 
 //Construtores
-	public Conta(String titular, int agencia, int numero, double limite, double saldo) {
+	public Conta(String titular, int numero, int agencia, double limite, double saldo) {
 		super();
 		this.titular = titular;
-		this.agencia = agencia;
 		this.numero = numero;
+		this.agencia = agencia;
 		this.limite = limite;
 		this.saldo = saldo;
 	}
 
-	public Conta(int id, String titular, int agencia, int numero, double limite, double saldo) {
+	public Conta(int id, String titular, int numero, int agencia, double limite, double saldo) {
 		super();
 		this.id = id;
 		this.titular = titular;
-		this.agencia = agencia;
 		this.numero = numero;
+		this.agencia = agencia;
 		this.limite = limite;
 		this.saldo = saldo;
 	}
