@@ -73,8 +73,7 @@ public class ContaDAO {
 		Conta c5 = new Conta("Iolanda Oliveira", 5, 2, 300.0, -280.0);*/
 		ContaDAO dao = new ContaDAO();
 		
-		//Alterar a conta cujo o id = 1
-		Scanner ss = new Scanner(System.in);
+		/*Scanner ss = new Scanner(System.in);
 		Scanner s = new Scanner(System.in);
 		System.out.println("Insira os novos dados para a tupla com id=1:\n");
 		System.out.print("Titular:");
@@ -86,16 +85,13 @@ public class ContaDAO {
 		System.out.print("Limite:");
 		double limite = s.nextDouble();
 		System.out.print("Saldo:");
-		double saldo = s.nextDouble();
+		double saldo = s.nextDouble();*/
 		
-		Conta alteraId1 = new Conta(titular, numConta, numAg, limite, saldo);
+		//Conta alteraId1 = new Conta(titular, numConta, numAg, limite, saldo);
+		
+		//Excluir a conta cujo id=2
 		try {
-			//dao.inserir(c1);
-			//dao.inserir(c2);
-			//dao.inserir(c3);
-			//dao.inserir(c4);
-			//dao.inserir(c5);
-			dao.atualiza(alteraId1, 1);
+			dao.excluir(2);
 			dao.listagem();
 		} catch (SQLException e) {
 			e.printStackTrace();
